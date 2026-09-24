@@ -1,0 +1,28 @@
+I'll be brief because I've already worked too hard on this project. There's a tool folder that includes the tools I used to make the various fixes, and a readme to see what it does or is needed for.
+
+I'm just writing a txt file for both versions (I published two versions, one without the planner fix but the other fixes, one with the planner fixes as well).
+
+What I fixed in the
+version without the planner:
+various icons, frames, and other things like that;
+the links to unsaved pages now go to the index of that page on the wayback (only if you're connected to the internet, of course). I might find a way to convert them for offline use, but I've already worked too hard on it. If I get back to it, it will be around the end of September/October or later.
+
+For the planner:
+I've done a lot of things; you should only have the final versions of the various programs.
+But in short, I've made a lot of assumptions for calculating the states. They seem similar to those in the game, but I'm sure they're a little different, but better than nothing.
+
+Not all of them are shown (movement and jump aren't, for example), but the important stats are. Some passives are a bit of a wonk. I'm talking about the ones that stack, so be careful when you use them.
+
+The planner also has other limitations. To avoid going crazy, I made sure the characters have access to memories and gear that are shown in their database pages.
+
+I'll be honest, I don't know if the master ability is used in the calculations, but I'm too tired now, lol.
+
+The planner only shows characters whose pages are saved correctly; like Vettel in the global version, it's missing.
+
+Sometimes you'll see pages related to the planner that don't work as links. Try other pages, sorry.
+
+The last thing is that the planner needs a server. You can find the info in the read me in tools. It's trivial, just install the libraries and run the .bat file. Ask the AI ​​for help if you have any questions.
+
+My contact information is still in the old txt if you need it.
+
+all this work and both mine and claude, truly an incredible technology.

@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+<!-- Mirrored from www.alchemistcodedb.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2025 11:19:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>Database - The Alchemist Code</title>
+  <meta name="description" content="The Alchemist Code website with information on units, gear, items, quests, and more!" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="../cdn.alchemistcodedb.com/assets/application-a2b3cc5bb409793aa98e1c00d01f976654b0c9eca2d5049488e203b915554e70.css" data-turbo-track="reload" />
+  <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "https://cdn.alchemistcodedb.com/assets/application-ad1aaf18d6cc0bdb593cef89d6641606594b9c51cc262c0308cb74b33bbbd321.js",
+    "@hotwired/turbo-rails": "https://cdn.alchemistcodedb.com/assets/turbo.min-ecfeff9c81fc57c5e6a5873fbecb23ddb3fef90c50c5134e9867e04c4c602c0b.js",
+    "@hotwired/stimulus": "https://cdn.alchemistcodedb.com/assets/stimulus.min-6afb6bb2ff09862f77125fd310ebb418e5570036adea98753b60ed6529ad328b.js",
+    "@hotwired/stimulus-loading": "https://cdn.alchemistcodedb.com/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js",
+    "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js",
+    "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/+esm",
+    "tippy": "https://unpkg.com/tippy.js@6.3.7/dist/tippy-bundle.umd.min.js",
+    "@rails/request.js": "https://cdn.jsdelivr.net/npm/@rails/request.js@0.0.9/dist/requestjs.min.js",
+    "combobox-nav": "https://cdn.jsdelivr.net/npm/@github/combobox-nav@3.0.1/dist/index.min.js",
+    "dexie": "https://cdn.jsdelivr.net/npm/dexie@4.0.7/dist/dexie.min.js",
+    "controllers/application": "https://cdn.alchemistcodedb.com/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js",
+    "controllers/form_controller": "https://cdn.alchemistcodedb.com/assets/controllers/form_controller-dc4b81ca94f366ea10045fd6b8be4645c57eb8537594af32ddccb6610b91f3f1.js",
+    "controllers": "https://cdn.alchemistcodedb.com/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js",
+    "controllers/planner_controller": "https://cdn.alchemistcodedb.com/assets/controllers/planner_controller-13884b106a9c48e9ac994ae652e4029ecda78e3c0c83d247de7431e2285812af.js",
+    "controllers/search_controller": "https://cdn.alchemistcodedb.com/assets/controllers/search_controller-ab0535ec59647538edb44548609f231ce8bad80d57fd7ad34da97eed1a5ab64b.js",
+    "controllers/tab_controller": "https://cdn.alchemistcodedb.com/assets/controllers/tab_controller-277b56d8097c3956b52a26ff8d1cc38960f6931c4d8c934263542eecbb894d29.js",
+    "controllers/theme_controller": "https://cdn.alchemistcodedb.com/assets/controllers/theme_controller-c3357dfda7f50a76344be224390b55a89e0ec28a97db349955993aece3564177.js",
+    "controllers/tooltip_controller": "https://cdn.alchemistcodedb.com/assets/controllers/tooltip_controller-e1a62e987db93e2f37b52dda204b8d818e5ac43205c091e7fc580ec6ab656c7f.js",
+    "controllers/visibility_controller": "https://cdn.alchemistcodedb.com/assets/controllers/visibility_controller-1c890f0e546f1e7d2a429ca7e419554e5064f7f53f01d3760751a942bc43ffae.js"
+  }
+}</script>
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/application-ad1aaf18d6cc0bdb593cef89d6641606594b9c51cc262c0308cb74b33bbbd321.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/turbo.min-ecfeff9c81fc57c5e6a5873fbecb23ddb3fef90c50c5134e9867e04c4c602c0b.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/stimulus.min-6afb6bb2ff09862f77125fd310ebb418e5570036adea98753b60ed6529ad328b.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js">
+<link rel="modulepreload" href="../cdn.jsdelivr.net/npm/%40popperjs/core%402.11.8/dist/umd/popper.min.js">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/+esm">
+<link rel="modulepreload" href="../unpkg.com/tippy.js%406.3.7/dist/tippy-bundle.umd.min.js">
+<link rel="modulepreload" href="../cdn.jsdelivr.net/npm/%40rails/request.js%400.0.9/dist/requestjs.min.js">
+<link rel="modulepreload" href="../cdn.jsdelivr.net/npm/%40github/combobox-nav%403.0.1/dist/index.min.js">
+<link rel="modulepreload" href="../cdn.jsdelivr.net/npm/dexie%404.0.7/dist/dexie.min.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/form_controller-dc4b81ca94f366ea10045fd6b8be4645c57eb8537594af32ddccb6610b91f3f1.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/planner_controller-13884b106a9c48e9ac994ae652e4029ecda78e3c0c83d247de7431e2285812af.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/search_controller-ab0535ec59647538edb44548609f231ce8bad80d57fd7ad34da97eed1a5ab64b.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/tab_controller-277b56d8097c3956b52a26ff8d1cc38960f6931c4d8c934263542eecbb894d29.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/theme_controller-c3357dfda7f50a76344be224390b55a89e0ec28a97db349955993aece3564177.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/tooltip_controller-e1a62e987db93e2f37b52dda204b8d818e5ac43205c091e7fc580ec6ab656c7f.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/visibility_controller-1c890f0e546f1e7d2a429ca7e419554e5064f7f53f01d3760751a942bc43ffae.js">
+<script type="module">import "application"</script>
+
+  <link rel="canonical" href="index.html" />
+        <link rel="alternate" hreflang="en" href="index.html">
+        <link rel="alternate" hreflang="jp" href="jp.html">
+  
+  <link rel="apple-touch-icon" type="image/png" href="../cdn.alchemistcodedb.com/assets/apple-touch-icon-85366e6703873ed41da7318958ed52bd2d6d05f24affec65be190684454677e8.png" />
+  <link rel="icon" type="image/png" href="../cdn.alchemistcodedb.com/assets/android-chrome-192x192-4be1cbf034190dfad6b442a43a44425b378e7c25d41d1964ee7986663a8c98b6.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="../cdn.alchemistcodedb.com/assets/favicon-32x32-b694058a59b4d7d17acb8dae2ccc8d8a71b89c9bf59e4184343b0af1c013367e.png" sizes="32x32" />
+  <script>var imgPath = "https://cdn.alchemistcodedb.com/";</script>
+    <script async src="../pagead2.googlesyndication.com/pagead/js/f8770.txt?client=ca-pub-9009010651712695" crossorigin="anonymous"></script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<body data-locale="en" data-controller="theme">
+  <script>if (localStorage.theme == "dark" || ((!("theme" in localStorage) || localStorage.theme == "auto") && window.matchMedia("(prefers-color-scheme: dark)").matches)) { document.body.classList.add("dark"); document.body.setAttribute("data-bs-theme", "dark"); } else { document.body.classList.add("light"); document.body.setAttribute("data-bs-theme", "light"); }</script>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-image-bg">
+    <div class="container">
+      <a class="navbar-brand" data-turbo-prefetch="false" href="index.html"><img alt="" src="../cdn.alchemistcodedb.com/assets/alchemistcode-db-4f33cbfb6100f1910d79c65849ea8eab5be924a48e20a1b2a763554af8fb4042.png" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link" href="units.html">Units</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="gears.html">Gear</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="cards.html">Mementos</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="runes.html">Seals</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="quests.html">Quests</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" id="navbarOther" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Other</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarOther">
+              <li><a class="dropdown-item" href="items.html">Items</a></li>
+              <li><a class="dropdown-item" href="missions.html">Missions</a></li>
+              <li><a class="dropdown-item" href="skills.html">Skills</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" id="navbarTools" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Tools</a>
+            <div class="dropdown-menu" aria-labelledby="navbarTools">
+              
+              <a class="dropdown-item" href="babel-expedition.html">Babel Expedition</a>
+              <a class="dropdown-item" href="experience-chart.html">Experience Chart</a>
+              
+              <a class="dropdown-item" data-turbo-prefetch="false" href="planner.html">Unit Planner</a>
+            </div>
+          </li>
+        </ul>
+        <form id="search" class="my-2 my-lg-0 flex-grow-1" data-controller="search" action="https://web.archive.org/web/*/https://www.alchemistcodedb.com/search" accept-charset="UTF-8" method="get">
+          <div class="input-group input-group-sm">
+              <input type="text" name="s" id="s" class="form-control" placeholder="Search the database…" autocomplete="off" aria-label="Search the database…" data-search-target="input" data-action="keydown.enter-&gt;search#updateInput input-&gt;search#result focus-&gt;search#start focusout-&gt;search#stop" />
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-sm btn-primary" data-action="click-&gt;search#disabled">
+                <i class="fa-solid fa-magnifying-glass"></i>
+</button>            </span>
+            <div class="d-flex align-items-center search-loading d-none" data-search-target="loading"><div class="spinner-border me-2" aria-hidden="true"></div>Loading...</div>
+            <turbo-frame id="search_results" target="_top"><ul role="listbox" id="search_list" data-search-target="list" hidden></ul></turbo-frame>
+          </div>
+</form>        <div class="btn-group pull-right ms-2" role="group" aria-label="Locale switcher">
+            <a class="btn btn-sm btn-primary" role="button" href="javascript:;">GL</a>
+            <a class="btn btn-sm btn-light" role="button" href="jp.html">JP</a>
+        </div>
+        <div class="btn-group pull-right ms-2 btn-group-theme" role="group" aria-label="Theme switcher">
+          <button id="themeDropDown" type="button" class="btn btn-sm btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-moon"></i></button>
+          <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start theme-dropdown-menu" aria-labelledby="themeDropDown">
+            <a class="dropdown-item btn-sm" data-bs-theme-value="light" data-action="theme#updateTheme" href="javascript:;"><i class="fa-solid fa-sun fa-fw me-2"></i>Light<i class="fa-solid fa-check d-none"></i></a>
+            <a class="dropdown-item btn-sm selected" data-bs-theme-value="dark" data-action="theme#updateTheme" href="javascript:;"><i class="fa-solid fa-moon fa-fw me-2"></i>Dark<i class="fa-solid fa-check"></i></a>
+            <a class="dropdown-item btn-sm" data-bs-theme-value="auto" data-action="theme#updateTheme" href="javascript:;"><i class="fa-solid fa-circle-half-stroke fa-fw me-2"></i>Auto<i class="fa-solid fa-check d-none"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    
+<div class="row">
+  <div class="col-lg-3">
+    <div class="card mb-3 d-none d-sm-none d-lg-block main-panel side-panel">
+  <div class="card-body">
+    <p>AlchemistCodeDB is a database for The Alchemist Code.</p>
+  </div>
+</div>
+
+<div class="list-group list-tabs d-none d-sm-none d-lg-block">
+  <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="https://thealchemistcode.gamepedia.com/The_Alchemist_Code_Wiki" target="_blank">Visit the Wiki!<i class="fa-solid fa-book" aria-hidden="true"></i></a>
+  <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="https://discord.gg/PsEnqUX" target="_blank">Join the Discord!<i class="fa-solid fa-comments" aria-hidden="true"></i></a>
+</div>
+      <h6 class="d-none d-sm-none d-md-block">Latest Units</h6>
+  <div class="list-group list-tabs d-none d-sm-none d-md-block">
+      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="unit/estela.html">
+        <img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/PortraitsM/este.png" />
+        <span>Estella</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="unit/schmeier.html">
+        <img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/PortraitsM/schm.png" />
+        <span>Schmeier</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="unit/esai-ignacio.html">
+        <img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/PortraitsM/esai.png" />
+        <span>Yishai Ignacio</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="unit/uroboros-legacy.html">
+        <img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/PortraitsM/urob_lega.png" />
+        <span>Ouroboros Legacy</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="unit/awake-emmel.html">
+        <img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/PortraitsM/awake_emme.png" />
+        <span>Emmel (Final Battle)</span>
+</a>  </div>
+
+      <h6 class="d-none d-sm-none d-md-block">Latest Gears</h6>
+  <div class="list-group list-tabs d-none d-sm-none d-md-block">
+      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="gear/af-accs-pok-tifaret-02.html">
+        <img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/ArtiIcon/AF_ACCS_POK_TIFARET_02.png" />
+        <span>Heavenly Flower Ornament</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="gear/af-armo-pok-ragnarok-01.html">
+        <img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/ArtiIcon/AF_ARMO_POK_RAGNAROK_01.png" />
+        <span>Shawl of Revolution</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="gear/af-accs-st-02.html">
+        <img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/ArtiIcon/AF_ACCS_ST_02.png" />
+        <span>Guilt of Memory</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="gear/af-accs-kamui-heros-01.html">
+        <img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/ArtiIcon/AF_ACCS_KAMUI_HEROS_01.png" />
+        <span>Radiant Flowers of Victory</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="gear/af-accs-schmeier-01.html">
+        <img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/ArtiIcon/AF_ACCS_SCHMEIER_01.png" />
+        <span>Wise Dragon Engraving</span>
+</a>  </div>
+
+      <h6 class="d-none d-sm-none d-md-block">Latest Mementos</h6>
+  <div class="list-group list-tabs d-none d-sm-none d-md-block">
+      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="card/ts-sb-04.html">
+        <div class="shadow-img"><img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/ConceptCardIcon/TS_SB_04.png" /></div>
+        <span>Promise of the Bird God and the Hero</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="card/ts-sb-03.html">
+        <div class="shadow-img"><img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/ConceptCardIcon/TS_SB_03.png" /></div>
+        <span>Dance of the Fan Hero</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="card/ts-desert-kamui-heros-01.html">
+        <div class="shadow-img"><img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/ConceptCardIcon/TS_DESERT_KAMUI_HEROS_01.png" /></div>
+        <span>The Power of Hearts Combined</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="card/ts-north-estela-01.html">
+        <div class="shadow-img"><img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/ConceptCardIcon/TS_NORTH_ESTELA_01.png" /></div>
+        <span>Connecting Memory and Destiny</span>
+</a>      <a class="list-group-item list-group-item-action d-flex align-items-center p-0" href="card/ts-sloth-schmeier-01.html">
+        <div class="shadow-img"><img class="latest-listing-icon" alt="" src="../cdn.alchemistcodedb.com/images/ConceptCardIcon/TS_SLOTH_SCHMEIER_01.png" /></div>
+        <span>Warmth of the Dragon of Wisdom</span>
+</a>  </div>
+
+  </div>
+  <div class="col-lg-9">
+    <div class="card main-panel">
+      <div class="card-header page-card-header">
+        <h1 class="mb-0 h3">Welcome to AlchemistCodeDB.com</h1>
+      </div>
+      <div class="card-body page-card-body">
+        <p>
+          <span class="news-heading">March 31st, 2023</span>
+          <br>
+          *End of Service for The Alchemist Code GL.
+        </p>
+        <p>
+          <span class="news-heading">February 9th, 2023</span>
+          <br>
+          *Database updated for February 7th patch.
+        </p>
+        <p>
+          <span class="news-heading">January 26th, 2023</span>
+          <br>
+          *Database updated for January 26th patch.
+        </p>
+        <p>
+          <span class="news-heading">January 19th, 2023</span>
+          <br>
+          *Database updated for January 19th patch.
+        </p>
+        <p>
+          <span class="news-heading">January 12th, 2023</span>
+          <br>
+          *Database updated for January 12th patch.
+        </p>
+        <p>
+          <span class="news-heading">January 5th, 2023</span>
+          <br>
+          *Database updated for January 5th patch.
+        </p>
+        <div class="accordion news-panel" id="news">
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h6 class="mb-0">
+                <a role="button" data-bs-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">2022</a>
+              </h6>
+            </div>
+
+            <div id="collapseSix" class="collapse news-collapse" aria-labelledby="headingSix" data-bs-parent="#news">
+              <div class="card-body">
+                <p>
+                  <span class="news-heading">December 22nd, 2022</span>
+                  <br>
+                  *Database updated for December 22nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 15th, 2022</span>
+                  <br>
+                  *Database updated for December 15th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 8th, 2022</span>
+                  <br>
+                  *Database updated for December 8th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 1st, 2022</span>
+                  <br>
+                  *Database updated for December 1st patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 24th, 2022</span>
+                  <br>
+                  *Database updated for November 24th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 17th, 2022</span>
+                  <br>
+                  *Database updated for November 17th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 10th, 2022</span>
+                  <br>
+                  *Database updated for November 10th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 3rd, 2022</span>
+                  <br>
+                  *Database updated for November 3rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 27th, 2022</span>
+                  <br>
+                  *Database updated for October 27th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 20th, 2022</span>
+                  <br>
+                  *Database updated for October 20th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 13th, 2022</span>
+                  <br>
+                  *Database updated for October 13th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 6th, 2022</span>
+                  <br>
+                  *Database updated for October 6th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 29th, 2022</span>
+                  <br>
+                  *Database updated for September 29th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 22nd, 2022</span>
+                  <br>
+                  *Database updated for September 22nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 15th, 2022</span>
+                  <br>
+                  *Database updated for September 15th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 8th, 2022</span>
+                  <br>
+                  *Database updated for September 8th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 1st, 2022</span>
+                  <br>
+                  *Database updated for September 1st patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 25th, 2022</span>
+                  <br>
+                  *Database updated for August 25th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 18th, 2022</span>
+                  <br>
+                  *Database updated for August 18th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 11th, 2022</span>
+                  <br>
+                  *Database updated for August 11th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 4th, 2022</span>
+                  <br>
+                  *Database updated for August 4th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 28th, 2022</span>
+                  <br>
+                  *Database updated for July 28th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 21st, 2022</span>
+                  <br>
+                  *Database updated for July 21st patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 14th, 2022</span>
+                  <br>
+                  *Database updated for July 14th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 7th, 2022</span>
+                  <br>
+                  *Database updated for July 7th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 30th, 2022</span>
+                  <br>
+                  *Database updated for June 30th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 23rd, 2022</span>
+                  <br>
+                  *Database updated for June 23rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 16th, 2022</span>
+                  <br>
+                  *Database updated for June 16th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 9th, 2022</span>
+                  <br>
+                  *Database updated for June 9th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 2nd, 2022</span>
+                  <br>
+                  *Database updated for June 2nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 26th, 2022</span>
+                  <br>
+                  *Database updated for May 26th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 19th, 2022</span>
+                  <br>
+                  *Database updated for May 19th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 12th, 2022</span>
+                  <br>
+                  *Database updated for May 12th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 5th, 2022</span>
+                  <br>
+                  *Database updated for May 5th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 28th, 2022</span>
+                  <br>
+                  *Database updated for April 28th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 21st, 2022</span>
+                  <br>
+                  *Database updated for April 21st patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 14th, 2022</span>
+                  <br>
+                  *Database updated for April 14th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 7th, 2022</span>
+                  <br>
+                  *Database updated for April 7th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 31st, 2022</span>
+                  <br>
+                  *Database updated for March 31st patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 17th, 2022</span>
+                  <br>
+                  *Database updated for March 17th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 10th, 2022</span>
+                  <br>
+                  *Database updated for March 10th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 3rd, 2022</span>
+                  <br>
+                  *Database updated for March 3rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 24th, 2022</span>
+                  <br>
+                  *Database updated for February 24th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 22nd, 2022</span>
+                  <br>
+                  *Various data added to Raids, Guild Raids, World Raids, Advance Bosses, Genesis Bosses, and Point Quests.
+                </p>
+                <p>
+                  <span class="news-heading">February 17th, 2022</span>
+                  <br>
+                  *Database updated for February 17th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 14th, 2022</span>
+                  <br>
+                  *Ability change skill tabs removed and replaced with a list of skills on the triggering skill (Too many errors with the tabs, this way is easier and can still get to most skills without much clicking).<br>
+                  *A few site/data errors fixed.
+                </p>
+                <p>
+                  <span class="news-heading">February 10th, 2022</span>
+                  <br>
+                  *Database updated for February 10th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 3rd, 2022</span>
+                  <br>
+                  *Database updated for February 3rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 29th, 2022</span>
+                  <br>
+                  *Database updated for January 28th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 20th, 2022</span>
+                  <br>
+                  *Database updated for January 20th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 13th, 2022</span>
+                  <br>
+                  *Database updated for January 13th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 6th, 2022</span>
+                  <br>
+                  *Database updated for January 6th patch.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h6 class="mb-0">
+                <a role="button" data-bs-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">2021</a>
+              </h6>
+            </div>
+
+            <div id="collapseFive" class="collapse news-collapse" aria-labelledby="headingFive" data-bs-parent="#news">
+              <div class="card-body">
+                <p>
+                  <span class="news-heading">December 31st, 2021</span>
+                  <br>
+                  *Database updated for December 30th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 23rd, 2021</span>
+                  <br>
+                  *Database updated for December 23rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 16th, 2021</span>
+                  <br>
+                  *Database updated for December 16th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 9th, 2021</span>
+                  <br>
+                  *Database updated for December 9th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 2nd, 2021</span>
+                  <br>
+                  *Database updated for December 2nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 25th, 2021</span>
+                  <br>
+                  *Database updated for November 25th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 18th, 2021</span>
+                  <br>
+                  *Database updated for November 18th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 11th, 2021</span>
+                  <br>
+                  *Database updated for November 11th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 3rd, 2021</span>
+                  <br>
+                  *Database updated for November 3rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 28th, 2021</span>
+                  <br>
+                  *Database updated for October 28th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 21st, 2021</span>
+                  <br>
+                  *Database updated for October 21st patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 14th, 2021</span>
+                  <br>
+                  *Database updated for October 14th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 7th, 2021</span>
+                  <br>
+                  *Database updated for October 7th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 30th, 2021</span>
+                  <br>
+                  *Database updated for September 30th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 23rd, 2021</span>
+                  <br>
+                  *Database updated for September 23rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 16th, 2021</span>
+                  <br>
+                  *Database updated for September 16th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 10th, 2021</span>
+                  <br>
+                  *Global search added, search by name and slug for the relevant sections, slug search also added to those index pages.<br>
+                  *Reworked some section index pages with perhaps more useful information, some other minor display issues fixed.
+                </p>
+                <p>
+                  <span class="news-heading">September 9th, 2021</span>
+                  <br>
+                  *Database updated for September 9th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 7th, 2021</span>
+                  <br>
+                  *Related Mementos added to Unit pages, Gear Abilities removed and replaced with Related Gear (Stats included minus abilities for both).
+                </p>
+                <p>
+                  <span class="news-heading">September 2nd, 2021</span>
+                  <br>
+                  *Database updated for September 2nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 26th, 2021</span>
+                  <br>
+                  *Database updated for August 26th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 19th, 2021</span>
+                  <br>
+                  *Database updated for August 19th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 12th, 2021</span>
+                  <br>
+                  *Database updated for August 12th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 5th, 2021</span>
+                  <br>
+                  *Database updated for August 5th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 29th, 2021</span>
+                  <br>
+                  *Database updated for July 29th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 25th, 2021</span>
+                  <br>
+                  *Unit planner updated to handle multiple job changes like J+ to J++.
+                </p>
+                <p>
+                  <span class="news-heading">July 22nd, 2021</span>
+                  <br>
+                  *Database updated for July 22nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 15th, 2021</span>
+                  <br>
+                  *Database updated for July 15th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 9th, 2021</span>
+                  <br>
+                  *Database updated for July 9th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 1st, 2021</span>
+                  <br>
+                  *Database updated for July 1st patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 24th, 2021</span>
+                  <br>
+                  *Database updated for June 24th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 17th, 2021</span>
+                  <br>
+                  *Database updated for June 17th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 10th, 2021</span>
+                  <br>
+                  *Database updated for June 10th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 3rd, 2021</span>
+                  <br>
+                  *Database updated for June 3rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 27th, 2021</span>
+                  <br>
+                  *Database updated for May 27th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 20th, 2021</span>
+                  <br>
+                  *Database updated for May 20th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 12th, 2021</span>
+                  <br>
+                  *Database updated for May 12th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 6th, 2021</span>
+                  <br>
+                  *Database updated for May 6th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 29th, 2021</span>
+                  <br>
+                  *Database updated for April 29th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 22nd, 2021</span>
+                  <br>
+                  *Database updated for April 22nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 15th, 2021</span>
+                  <br>
+                  *Database updated for April 15th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 8th, 2021</span>
+                  <br>
+                  *Database updated for April 8th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 1st, 2021</span>
+                  <br>
+                  *Database updated for April 1st patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 25th, 2021</span>
+                  <br>
+                  *Database updated for March 25th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 18th, 2021</span>
+                  <br>
+                  *Database updated for March 18th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 11th, 2021</span>
+                  <br>
+                  *Database updated for March 11th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 4th, 2021</span>
+                  <br>
+                  *Database updated for March 4th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 25th, 2021</span>
+                  <br>
+                  *Database updated for February 25th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 18th, 2021</span>
+                  <br>
+                  *Database updated for February 18th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 10th, 2021</span>
+                  <br>
+                  *Database updated for February 10th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 4th, 2021</span>
+                  <br>
+                  *Database updated for February 4th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 28th, 2021</span>
+                  <br>
+                  *Database updated for January 28th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 21st, 2021</span>
+                  <br>
+                  *Database updated for January 21st patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 14th, 2021</span>
+                  <br>
+                  *Database updated for January 14th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 7th, 2021</span>
+                  <br>
+                  *Database updated for January 7th patch.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h6 class="mb-0">
+                <a role="button" data-bs-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">2020</a>
+              </h6>
+            </div>
+
+            <div id="collapseFour" class="collapse news-collapse" aria-labelledby="headingFour" data-bs-parent="#news">
+              <div class="card-body">
+                <p>
+                  <span class="news-heading">December 30th, 2020</span>
+                  <br>
+                  *Database updated for December 30th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 23rd, 2020</span>
+                  <br>
+                  *Database updated for December 23rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 17th, 2020</span>
+                  <br>
+                  *Database updated for December 17th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 10th, 2020</span>
+                  <br>
+                  *Database updated for December 10th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 3rd, 2020</span>
+                  <br>
+                  *Database updated for December 3rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 26th, 2020</span>
+                  <br>
+                  *Database updated for November 26th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 19th, 2020</span>
+                  <br>
+                  *Database updated for November 19th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 12th, 2020</span>
+                  <br>
+                  *Database updated for November 12th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 5th, 2020</span>
+                  <br>
+                  *Database updated for November 5th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 29th, 2020</span>
+                  <br>
+                  *Database updated for October 29th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 22nd, 2020</span>
+                  <br>
+                  *Database updated for October 22nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 15th, 2020</span>
+                  <br>
+                  *Database updated for October 15th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 8th, 2020</span>
+                  <br>
+                  *Database updated for October 8th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 1st, 2020</span>
+                  <br>
+                  *Database updated for October 1st patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 24th, 2020</span>
+                  <br>
+                  *Database updated for September 24th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 17th, 2020</span>
+                  <br>
+                  *Database updated for September 17th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 10th, 2020</span>
+                  <br>
+                  *Database updated for September 10th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 3rd, 2020</span>
+                  <br>
+                  *Database updated for September 3rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 27th, 2020</span>
+                  <br>
+                  *Database updated for August 27th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 20th, 2020</span>
+                  <br>
+                  *Database updated for August 20th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 13th, 2020</span>
+                  <br>
+                  *Database updated for August 13th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 6th, 2020</span>
+                  <br>
+                  *Database updated for August 6th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 30th, 2020</span>
+                  <br>
+                  *Database updated for July 30th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 23rd, 2020</span>
+                  <br>
+                  *Database updated for July 23rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 16th, 2020</span>
+                  <br>
+                  *Database updated for July 16th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 9th, 2020</span>
+                  <br>
+                  *Database updated for July 9th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 2nd, 2020</span>
+                  <br>
+                  *Database updated for July 2nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 25th, 2020</span>
+                  <br>
+                  *Database updated for June 25th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 18th, 2020</span>
+                  <br>
+                  *Database updated for June 18th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 11th, 2020</span>
+                  <br>
+                  *Database updated for June 11th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 4th, 2020</span>
+                  <br>
+                  *Database updated for June 4th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 28th, 2020</span>
+                  <br>
+                  *Database updated for May 28th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 21st, 2020</span>
+                  <br>
+                  *Database updated for May 21st patch.<br>
+                  *Various UI Elements updated with GL terminology (Probably still missed some but whatever).<br>
+                  *UI Revamp where you can change which locale you want for JP still being worked on (No ETA and like other stuff may never happen).
+                </p>
+                <p>
+                  <span class="news-heading">May 17th, 2020</span>
+                  <br>
+                  *Fixed missing alternative requirements for equipping gears.
+                </p>
+                <p>
+                  <span class="news-heading">May 14th, 2020</span>
+                  <br>
+                  *Database updated for May 14th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 13th, 2020</span>
+                  <br>
+                  *Combat buffs/debuffs stats added next to the total value in unit planner.<br>
+                  *Gender filter added to unit index and jobs filter changed to or condition.<br>
+                  *A few site/data errors fixed.
+                </p>
+                <p>
+                  <span class="news-heading">May 7th, 2020</span>
+                  <br>
+                  *Database updated for May 7th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 30th, 2020</span>
+                  <br>
+                  *Database updated for April 30th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 23rd, 2020</span>
+                  <br>
+                  *Database updated for April 23rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 16th, 2020</span>
+                  <br>
+                  *Database updated for April 16th patch.<br>
+                  *Map Display added to quest pages (Inspired/Copied from W0lf).<br>
+                  *Various data added to quest pages (Still bunch of stuff missing but better than before).<br>
+                  *Various site/data errors fixed.
+                </p>
+                <p>
+                  <span class="news-heading">April 9th, 2020</span>
+                  <br>
+                  *Database updated for April 9th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 1st, 2020</span>
+                  <br>
+                  *Database updated for April 1st patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 26th, 2020</span>
+                  <br>
+                  *Database updated for March 26th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 19th, 2020</span>
+                  <br>
+                  *Database updated for March 19th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 12th, 2020</span>
+                  <br>
+                  *Database updated for March 12th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 5th, 2020</span>
+                  <br>
+                  *Database updated for March 5th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 27th, 2020</span>
+                  <br>
+                  *Database updated for February 27th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 20th, 2020</span>
+                  <br>
+                  *Database updated for February 20th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 13th, 2020</span>
+                  <br>
+                  *Database updated for February 13th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 6th, 2020</span>
+                  <br>
+                  *Database updated for February 6th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 30th, 2020</span>
+                  <br>
+                  *Database updated for January 30th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 23rd, 2020</span>
+                  <br>
+                  *Database updated for January 23rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 16th, 2020</span>
+                  <br>
+                  *Database updated for January 16th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 9th, 2020</span>
+                  <br>
+                  *Database updated for January 9th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 2nd, 2020</span>
+                  <br>
+                  *Database updated for January 2nd patch.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h6 class="mb-0">
+                <a role="button" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">2019</a>
+              </h6>
+            </div>
+
+            <div id="collapseThree" class="collapse news-collapse" aria-labelledby="headingThree" data-bs-parent="#news">
+              <div class="card-body">
+                <p>
+                  <span class="news-heading">December 19th, 2019</span>
+                  <br>
+                  *Database updated for December 19th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 12th, 2019</span>
+                  <br>
+                  *Database updated for December 12th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 5th, 2019</span>
+                  <br>
+                  *Database updated for December 5th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 28th, 2019</span>
+                  <br>
+                  *Database updated for November 28th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 21st, 2019</span>
+                  <br>
+                  *Database updated for November 21st patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 14th, 2019</span>
+                  <br>
+                  *Database updated for November 14th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 7th, 2019</span>
+                  <br>
+                  *Database updated for November 7th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 31st, 2019</span>
+                  <br>
+                  *Database updated for October 31st patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 24th, 2019</span>
+                  <br>
+                  *Database updated for October 24th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 17th, 2019</span>
+                  <br>
+                  *Database updated for October 17th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 10th, 2019</span>
+                  <br>
+                  *Database updated for October 10th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 3rd, 2019</span>
+                  <br>
+                  *Database updated for October 3rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 26th, 2019</span>
+                  <br>
+                  *Database updated for September 26th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 19th, 2019</span>
+                  <br>
+                  *Database updated for September 19th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 12th, 2019</span>
+                  <br>
+                  *Database updated for September 12th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 5th, 2019</span>
+                  <br>
+                  *Database updated for September 5th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 29th, 2019</span>
+                  <br>
+                  *Database updated for August 29th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 22nd, 2019</span>
+                  <br>
+                  *Database updated for August 22nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 15th, 2019</span>
+                  <br>
+                  *Database updated for August 15th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 8th, 2019</span>
+                  <br>
+                  *Database updated for August 8th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 1st, 2019</span>
+                  <br>
+                  *Database updated for August 1st patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 25th, 2019</span>
+                  <br>
+                  *Database updated for July 25th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 18th, 2019</span>
+                  <br>
+                  *Database updated for July 18th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 11th, 2019</span>
+                  <br>
+                  *Database updated for July 11th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 6th, 2019</span>
+                  <br>
+                  *Database updated for July 4th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 27th, 2019</span>
+                  <br>
+                  *Database updated for June 27th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 20th, 2019</span>
+                  <br>
+                  *Database updated for June 20th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 13th, 2019</span>
+                  <br>
+                  *Database updated for June 13th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 6th, 2019</span>
+                  <br>
+                  *Database updated for June 6th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 23rd, 2019</span>
+                  <br>
+                  *Database updated for May 23rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 16th, 2019</span>
+                  <br>
+                  *Database updated for May 16th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 9th, 2019</span>
+                  <br>
+                  *Database updated for May 9th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 2nd, 2019</span>
+                  <br>
+                  *Database updated for May 2nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 25th, 2019</span>
+                  <br>
+                  *Database updated for April 25th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 18th, 2019</span>
+                  <br>
+                  *Database updated for April 18th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 11th, 2019</span>
+                  <br>
+                  *Database updated for April 11th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 4th, 2019</span>
+                  <br>
+                  *Database updated for April 4th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 28th, 2019</span>
+                  <br>
+                  *Database updated for March 28th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 21st, 2019</span>
+                  <br>
+                  *Database updated for March 21st patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 14th, 2019</span>
+                  <br>
+                  *Database updated for March 14th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 7th, 2019</span>
+                  <br>
+                  *Database updated for March 7th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 28th, 2019</span>
+                  <br>
+                  *Database updated for February 28th patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 23rd, 2019</span>
+                  <br>
+                  *Database updated for February 21st patch.<br>*Bunch of unreleased items, gear, and mementos added that are missing unreleased units data.<br> *Kamui also unreleased but went ahead and left him in.
+                </p>
+                <p>
+                  <span class="news-heading">February 14th, 2019</span>
+                  <br>
+                  *Database updated for February 14th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 31st, 2019</span>
+                  <br>
+                  *Database updated for January 31st patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 24th, 2019</span>
+                  <br>
+                  *Database updated for January 24th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 17th, 2019</span>
+                  <br>
+                  *Database updated for January 17th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 3rd, 2019</span>
+                  <br>
+                  *Database updated for January 3rd patch.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h6 class="mb-0">
+                <a role="button" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2018</a>
+              </h6>
+            </div>
+
+            <div id="collapseTwo" class="collapse news-collapse" aria-labelledby="headingTwo" data-bs-parent="#news">
+              <div class="card-body">
+                <p>
+                  <span class="news-heading">December 27th, 2018</span>
+                  <br>
+                  *Database updated for December 27th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 22nd, 2018</span>
+                  <br>
+                  *PvP stats on gear pages added.
+                </p>
+                <p>
+                  <span class="news-heading">December 20th, 2018</span>
+                  <br>
+                  *Database updated for December 20th patch.
+                </p>
+                <p>
+                  <span class="news-heading">December 6th, 2018</span>
+                  <br>
+                  *Database updated for December 6th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 29th, 2018</span>
+                  <br>
+                  *Database updated for November 29th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 22nd, 2018</span>
+                  <br>
+                  *Database updated for November 22nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 15th, 2018</span>
+                  <br>
+                  *Database updated for November 15th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 8th, 2018</span>
+                  <br>
+                  *Database updated for November 8th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 1st, 2018</span>
+                  <br>
+                  *Database updated for November 1st patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 25th, 2018</span>
+                  <br>
+                  *Database updated for October 25th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 18th, 2018</span>
+                  <br>
+                  *Database updated for October 18th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 11th, 2018</span>
+                  <br>
+                  *Database updated for October 11th patch.
+                </p>
+                <p>
+                  <span class="news-heading">October 4th, 2018</span>
+                  <br>
+                  *Database updated for October 4th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 27th, 2018</span>
+                  <br>
+                  *Database updated for September 27th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 20th, 2018</span>
+                  <br>
+                  *Database updated for September 20th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 13th, 2018</span>
+                  <br>
+                  *Database updated for September 13th patch.
+                </p>
+                <p>
+                  <span class="news-heading">September 6th, 2018</span>
+                  <br>
+                  *Database updated for September 6th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 30th, 2018</span>
+                  <br>
+                  *Database updated for August 30th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 16th, 2018</span>
+                  <br>
+                  *Database updated for August 16th patch.
+                </p>
+                <p>
+                  <span class="news-heading">August 2nd, 2018</span>
+                  <br>
+                  *Database updated for August 2nd patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 26th, 2018</span>
+                  <br>
+                  *Database updated for July 26th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 19th, 2018</span>
+                  <br>
+                  *Database updated for July 19th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 12th, 2018</span>
+                  <br>
+                  *Database updated for July 12th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 7th, 2018</span>
+                  <br>
+                  *Unit planner revamped, full customization now available.
+                </p>
+                <p>
+                  <span class="news-heading">July 5th, 2018</span>
+                  <br>
+                  *Database updated for July 5th patch.
+                </p>
+                <p>
+                  <span class="news-heading">July 2nd, 2018</span>
+                  <br>
+                  *New site design, dark theme is now considered the default theme.
+                </p>
+                <p>
+                  <span class="news-heading">June 28th, 2018</span>
+                  <br>
+                  *Database updated for June 28th patch.
+                </p>
+                <p>
+                  <span class="news-heading">June 14th, 2018</span>
+                  <br>
+                  *Database updated for June 14th patch (Updated).
+                </p>
+                <p>
+                  <span class="news-heading">June 7th, 2018</span>
+                  <br>
+                  *Database updated for June 7th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 24th, 2018</span>
+                  <br>
+                  *Database updated for May 24th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 10th, 2018</span>
+                  <br>
+                  *Database updated for May 10th patch.
+                </p>
+                <p>
+                  <span class="news-heading">May 3rd, 2018</span>
+                  <br>
+                  *Database updated for May 3rd patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 26th, 2018</span>
+                  <br>
+                  *Database updated for April 26th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 19th, 2018</span>
+                  <br>
+                  *Database updated for April 19th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 12th, 2018</span>
+                  <br>
+                  *Database updated for April 12th patch.
+                </p>
+                <p>
+                  <span class="news-heading">April 5th, 2018</span>
+                  <br>
+                  *Database updated for April 5th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 29th, 2018</span>
+                  <br>
+                  *Database updated for March 29th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 19th, 2018</span>
+                  <br>
+                  *Gear fixes to unit planner.
+                </p>
+                <p>
+                  <span class="news-heading">March 15th, 2018</span>
+                  <br>
+                  *Database updated for March 15th patch.
+                </p>
+                <p>
+                  <span class="news-heading">March 1st, 2018</span>
+                  <br>
+                  *Database updated for March 1st patch.
+                </p>
+                <p>
+                  <span class="news-heading">February 22nd, 2018</span>
+                  <br>
+                  *Ads added to help pay server costs.
+                </p>
+                <p>
+                  <span class="news-heading">February 12th, 2018</span>
+                  <br>
+                  *Database updated for February 12th patch and unit planner added under Tools.
+                </p>
+                <p>
+                  <span class="news-heading">February 1st, 2018</span>
+                  <br>
+                  *Database updated for February 1st patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 25th, 2018</span>
+                  <br>
+                  *Dark theme added, theme can be switched from link in footer.
+                </p>
+                <p>
+                  <span class="news-heading">January 18th, 2018</span>
+                  <br>
+                  *Database updated for January 18th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 16th, 2018</span>
+                  <br>
+                  *Title list added under Tools, Chg Job for units fixed, and search by slug added for units index.
+                </p>
+                <p>
+                  <span class="news-heading">January 5th, 2018</span>
+                  <br>
+                  *Skills added.
+                </p>
+                <p>
+                  <span class="news-heading">January 4th, 2018</span>
+                  <br>
+                  *Database updated for January 4th patch.
+                </p>
+                <p>
+                  <span class="news-heading">January 3rd, 2018</span>
+                  <br>
+                  *Unit stats and skills added to quests.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h6 class="mb-0">
+                <a role="button" data-bs-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">2017</a>
+              </h6>
+            </div>
+
+            <div id="collapseOne" class="collapse news-collapse" aria-labelledby="headingOne" data-bs-parent="#news">
+              <div class="card-body">
+                <p>
+                  <span class="news-heading">December 21st, 2017</span>
+                  <br>
+                  *Database updated for December 21st patch and experience chart added under Tools.
+                </p>
+                <p>
+                  <span class="news-heading">December 15th, 2017</span>
+                  <br>
+                  *Missions added.
+                </p>
+                <p>
+                  <span class="news-heading">December 7th, 2017</span>
+                  <br>
+                  *Database updated for December 7th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 30th, 2017</span>
+                  <br>
+                  *Database updated for November 30th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 27th, 2017</span>
+                  <br>
+                  *Quests added.
+                </p>
+                <p>
+                  <span class="news-heading">November 19th, 2017</span>
+                  <br>
+                  *Database updated with JP version data.
+                </p>
+                <p>
+                  <span class="news-heading">November 15th, 2017</span>
+                  <br>
+                  *Items added.
+                </p>
+                <p>
+                  <span class="news-heading">November 14th, 2017</span>
+                  <br>
+                  *Database updated for November 14th patch.
+                </p>
+                <p>
+                  <span class="news-heading">November 13th, 2017</span>
+                  <br>
+                  *Gear added.
+                </p>
+                <p>
+                  <span class="news-heading">November 9th, 2017</span>
+                  <br>
+                  *Initial launch of site.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <footer>
+  <p class="copyright"><a data-turbo-prefetch="false" href="privacy-policy.html">Privacy Policy</a></p>
+  <p class="copyright">&copy; 2017 - 2024 AlchemistCodeDB.com<br>
+  All game content and assets are trademarks and copyrights of Fuji&amp;gumi Games or gumi Inc. This site is not affiliated with Fuji&amp;gumi Games or gumi Inc.</p>
+</footer>
+  </div>
+</body>
+
+<!-- Mirrored from www.alchemistcodedb.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2025 11:20:14 GMT -->
+</html>

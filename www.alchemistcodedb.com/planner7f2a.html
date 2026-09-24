@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+<!-- Mirrored from www.alchemistcodedb.com/planner?build=eyJ1IjoiaWtvbmEiLCJsIjo4NSwiaiI6IjAifQ== by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2025 17:53:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>Unit Planner - The Alchemist Code</title>
+  <meta name="description" content="Unit Planner for The Alchemist Code." />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="../cdn.alchemistcodedb.com/assets/application-a2b3cc5bb409793aa98e1c00d01f976654b0c9eca2d5049488e203b915554e70.css" data-turbo-track="reload" />
+  <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "https://cdn.alchemistcodedb.com/assets/application-ad1aaf18d6cc0bdb593cef89d6641606594b9c51cc262c0308cb74b33bbbd321.js",
+    "@hotwired/turbo-rails": "https://cdn.alchemistcodedb.com/assets/turbo.min-ecfeff9c81fc57c5e6a5873fbecb23ddb3fef90c50c5134e9867e04c4c602c0b.js",
+    "@hotwired/stimulus": "https://cdn.alchemistcodedb.com/assets/stimulus.min-6afb6bb2ff09862f77125fd310ebb418e5570036adea98753b60ed6529ad328b.js",
+    "@hotwired/stimulus-loading": "https://cdn.alchemistcodedb.com/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js",
+    "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js",
+    "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/+esm",
+    "tippy": "https://unpkg.com/tippy.js@6.3.7/dist/tippy-bundle.umd.min.js",
+    "@rails/request.js": "https://cdn.jsdelivr.net/npm/@rails/request.js@0.0.9/dist/requestjs.min.js",
+    "combobox-nav": "https://cdn.jsdelivr.net/npm/@github/combobox-nav@3.0.1/dist/index.min.js",
+    "dexie": "https://cdn.jsdelivr.net/npm/dexie@4.0.7/dist/dexie.min.js",
+    "controllers/application": "https://cdn.alchemistcodedb.com/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js",
+    "controllers/form_controller": "https://cdn.alchemistcodedb.com/assets/controllers/form_controller-dc4b81ca94f366ea10045fd6b8be4645c57eb8537594af32ddccb6610b91f3f1.js",
+    "controllers": "https://cdn.alchemistcodedb.com/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js",
+    "controllers/planner_controller": "https://cdn.alchemistcodedb.com/assets/controllers/planner_controller-13884b106a9c48e9ac994ae652e4029ecda78e3c0c83d247de7431e2285812af.js",
+    "controllers/search_controller": "https://cdn.alchemistcodedb.com/assets/controllers/search_controller-ab0535ec59647538edb44548609f231ce8bad80d57fd7ad34da97eed1a5ab64b.js",
+    "controllers/tab_controller": "https://cdn.alchemistcodedb.com/assets/controllers/tab_controller-277b56d8097c3956b52a26ff8d1cc38960f6931c4d8c934263542eecbb894d29.js",
+    "controllers/theme_controller": "https://cdn.alchemistcodedb.com/assets/controllers/theme_controller-c3357dfda7f50a76344be224390b55a89e0ec28a97db349955993aece3564177.js",
+    "controllers/tooltip_controller": "https://cdn.alchemistcodedb.com/assets/controllers/tooltip_controller-e1a62e987db93e2f37b52dda204b8d818e5ac43205c091e7fc580ec6ab656c7f.js",
+    "controllers/visibility_controller": "https://cdn.alchemistcodedb.com/assets/controllers/visibility_controller-1c890f0e546f1e7d2a429ca7e419554e5064f7f53f01d3760751a942bc43ffae.js"
+  }
+}</script>
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/application-ad1aaf18d6cc0bdb593cef89d6641606594b9c51cc262c0308cb74b33bbbd321.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/turbo.min-ecfeff9c81fc57c5e6a5873fbecb23ddb3fef90c50c5134e9867e04c4c602c0b.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/stimulus.min-6afb6bb2ff09862f77125fd310ebb418e5570036adea98753b60ed6529ad328b.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js">
+<link rel="modulepreload" href="../cdn.jsdelivr.net/npm/%40popperjs/core%402.11.8/dist/umd/popper.min.js">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/+esm">
+<link rel="modulepreload" href="../unpkg.com/tippy.js%406.3.7/dist/tippy-bundle.umd.min.js">
+<link rel="modulepreload" href="../cdn.jsdelivr.net/npm/%40rails/request.js%400.0.9/dist/requestjs.min.js">
+<link rel="modulepreload" href="../cdn.jsdelivr.net/npm/%40github/combobox-nav%403.0.1/dist/index.min.js">
+<link rel="modulepreload" href="../cdn.jsdelivr.net/npm/dexie%404.0.7/dist/dexie.min.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/form_controller-dc4b81ca94f366ea10045fd6b8be4645c57eb8537594af32ddccb6610b91f3f1.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/planner_controller-13884b106a9c48e9ac994ae652e4029ecda78e3c0c83d247de7431e2285812af.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/search_controller-ab0535ec59647538edb44548609f231ce8bad80d57fd7ad34da97eed1a5ab64b.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/tab_controller-277b56d8097c3956b52a26ff8d1cc38960f6931c4d8c934263542eecbb894d29.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/theme_controller-c3357dfda7f50a76344be224390b55a89e0ec28a97db349955993aece3564177.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/tooltip_controller-e1a62e987db93e2f37b52dda204b8d818e5ac43205c091e7fc580ec6ab656c7f.js">
+<link rel="modulepreload" href="../cdn.alchemistcodedb.com/assets/controllers/visibility_controller-1c890f0e546f1e7d2a429ca7e419554e5064f7f53f01d3760751a942bc43ffae.js">
+<script type="module">import "application"</script>
+
+  <link rel="canonical" href="planner.html" />
+          <link rel="alternate" hreflang="en" href="planner.html">
+      <link rel="alternate" hreflang="ja" href="jp/planner.html">
+
+  
+  <link rel="apple-touch-icon" type="image/png" href="../cdn.alchemistcodedb.com/assets/apple-touch-icon-85366e6703873ed41da7318958ed52bd2d6d05f24affec65be190684454677e8.png" />
+  <link rel="icon" type="image/png" href="../cdn.alchemistcodedb.com/assets/android-chrome-192x192-4be1cbf034190dfad6b442a43a44425b378e7c25d41d1964ee7986663a8c98b6.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="../cdn.alchemistcodedb.com/assets/favicon-32x32-b694058a59b4d7d17acb8dae2ccc8d8a71b89c9bf59e4184343b0af1c013367e.png" sizes="32x32" />
+  <script>var imgPath = "https://cdn.alchemistcodedb.com/";</script>
+    <script async src="../pagead2.googlesyndication.com/pagead/js/f8770.txt?client=ca-pub-9009010651712695" crossorigin="anonymous"></script>
+</head>
+<body data-locale="en" data-controller="theme">
+  <script>if (localStorage.theme == "dark" || ((!("theme" in localStorage) || localStorage.theme == "auto") && window.matchMedia("(prefers-color-scheme: dark)").matches)) { document.body.classList.add("dark"); document.body.setAttribute("data-bs-theme", "dark"); } else { document.body.classList.add("light"); document.body.setAttribute("data-bs-theme", "light"); }</script>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-image-bg">
+    <div class="container">
+      <a class="navbar-brand" data-turbo-prefetch="false" href="index.html"><img alt="" src="../cdn.alchemistcodedb.com/assets/alchemistcode-db-4f33cbfb6100f1910d79c65849ea8eab5be924a48e20a1b2a763554af8fb4042.png" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link" href="units.html">Units</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="gears.html">Gear</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="cards.html">Mementos</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="runes.html">Seals</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="quests.html">Quests</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" id="navbarOther" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Other</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarOther">
+              <li><a class="dropdown-item" href="items.html">Items</a></li>
+              <li><a class="dropdown-item" href="missions.html">Missions</a></li>
+              <li><a class="dropdown-item" href="skills.html">Skills</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" id="navbarTools" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Tools</a>
+            <div class="dropdown-menu" aria-labelledby="navbarTools">
+              
+              <a class="dropdown-item" href="babel-expedition.html">Babel Expedition</a>
+              <a class="dropdown-item" href="experience-chart.html">Experience Chart</a>
+              
+              <a class="dropdown-item" data-turbo-prefetch="false" href="planner.html">Unit Planner</a>
+            </div>
+          </li>
+        </ul>
+        <form id="search" class="my-2 my-lg-0 flex-grow-1" data-controller="search" action="https://web.archive.org/web/*/https://www.alchemistcodedb.com/search" accept-charset="UTF-8" method="get">
+          <div class="input-group input-group-sm">
+              <input type="text" name="s" id="s" class="form-control" placeholder="Search the database…" autocomplete="off" aria-label="Search the database…" data-search-target="input" data-action="keydown.enter-&gt;search#updateInput input-&gt;search#result focus-&gt;search#start focusout-&gt;search#stop" />
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-sm btn-primary" data-action="click-&gt;search#disabled">
+                <i class="fa-solid fa-magnifying-glass"></i>
+</button>            </span>
+            <div class="d-flex align-items-center search-loading d-none" data-search-target="loading"><div class="spinner-border me-2" aria-hidden="true"></div>Loading...</div>
+            <turbo-frame id="search_results" target="_top"><ul role="listbox" id="search_list" data-search-target="list" hidden></ul></turbo-frame>
+          </div>
+</form>        <div class="btn-group pull-right ms-2" role="group" aria-label="Locale switcher">
+            <a class="btn btn-sm btn-primary" role="button" href="javascript:;">GL</a>
+            <a class="btn btn-sm btn-light" role="button" href="jp/planner.html">JP</a>
+        </div>
+        <div class="btn-group pull-right ms-2 btn-group-theme" role="group" aria-label="Theme switcher">
+          <button id="themeDropDown" type="button" class="btn btn-sm btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-moon"></i></button>
+          <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start theme-dropdown-menu" aria-labelledby="themeDropDown">
+            <a class="dropdown-item btn-sm" data-bs-theme-value="light" data-action="theme#updateTheme" href="javascript:;"><i class="fa-solid fa-sun fa-fw me-2"></i>Light<i class="fa-solid fa-check d-none"></i></a>
+            <a class="dropdown-item btn-sm selected" data-bs-theme-value="dark" data-action="theme#updateTheme" href="javascript:;"><i class="fa-solid fa-moon fa-fw me-2"></i>Dark<i class="fa-solid fa-check"></i></a>
+            <a class="dropdown-item btn-sm" data-bs-theme-value="auto" data-action="theme#updateTheme" href="javascript:;"><i class="fa-solid fa-circle-half-stroke fa-fw me-2"></i>Auto<i class="fa-solid fa-check d-none"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    
+<div id="unitPlanner" class="card main-panel" data-db-version-en="1" data-controller="planner">
+  <div id="loading" class="d-none"><i class="fa-solid fa-gear fa-spin"></i> Loading...</div>
+  <div class="row">
+    <div class="col-xl-8 col-lg-12 col-md-7 col-sm-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div id="unitMain" class="card main-panel">
+            <div class="planner-header select-header">
+              <div class="unit-select">
+                <span class="me-1">Unit: </span>
+                <select name="unitsSelect" id="unitsSelect" class="form-select index-control form-select-sm" data-action="planner#getUnit"><option value="" label=" "></option><option value="achad">Acht</option>
+<option value="adorei">Adaleigh</option>
+<option value="ainanna">Ainanna</option>
+<option value="dung-aiz">Ais Wallenstein</option>
+<option value="aisha">Aisha</option>
+<option value="alaia">Alaia</option>
+<option value="albell">Albea</option>
+<option value="alexis">Alexis</option>
+<option value="alfred">Alfred</option>
+<option value="alma">Alma</option>
+<option value="pok-arumasu">Almace</option>
+<option value="almila">Almira</option>
+<option value="dis-almila">Almira</option>
+<option value="fa-alphonse">Alphonse</option>
+<option value="ayllu">Alyu</option>
+<option value="amane">Amane</option>
+<option value="s-amaterasu">Amaterasu</option>
+<option value="ambrosia">Ambrosia</option>
+<option value="amis">Amis</option>
+<option value="anastasia">Anastasia</option>
+<option value="andechs">Andechs</option>
+<option value="anjou">Ange</option>
+<option value="ankh">Ankh</option>
+<option value="annerose">Annerose</option>
+<option value="annika">Annika</option>
+<option value="ff15-aranea">Aranea</option>
+<option value="archer">Archer</option>
+<option value="arkill">Arkil</option>
+<option value="pok-artemis">Artemis</option>
+<option value="cry-arthur">Arthur</option>
+<option value="aruba">Aruba</option>
+<option value="gl-asuka">Asuka</option>
+<option value="asuwado">Aswald</option>
+<option value="balt">Balt</option>
+<option value="ts-ban">Ban</option>
+<option value="basini">Basheeny</option>
+<option value="basyosen">Bashosen</option>
+<option value="dung-bell">Bell Cranel</option>
+<option value="benika">Benika</option>
+<option value="tsp-benimaru">Benimaru</option>
+<option value="belta">Bertha</option>
+<option value="bianca">Bianca</option>
+<option value="birgitta">Birgitta</option>
+<option value="gl-blair">Blair</option>
+<option value="blanchett">Blanchett</option>
+<option value="blitz">Blitz</option>
+<option value="bud">Bud</option>
+<option value="cadanova">Cadanova</option>
+<option value="caesar">Caesar</option>
+<option value="chalice">Caris</option>
+<option value="carla">Carla</option>
+<option value="kyaroru">Carol</option>
+<option value="pok-cassius">Cassius</option>
+<option value="celine">Celine</option>
+<option value="celes">Celis</option>
+<option value="celliers">Celliers</option>
+<option value="chao">Chao</option>
+<option value="chatnoir">Chat Noir</option>
+<option value="cheryl">Cheryl</option>
+<option value="chihaya">Chihaya</option>
+<option value="chiruru">Chiruru</option>
+<option value="cloe">Chloe</option>
+<option value="ciel">Ciel</option>
+<option value="sita">Cita</option>
+<option value="claris">Claris</option>
+<option value="clabul">Claybelle</option>
+<option value="cordelia">Cordelia</option>
+<option value="niguru">Corvus</option>
+<option value="kuraju">Courage</option>
+<option value="kurt">Creto</option>
+<option value="dartagnan">D&#39;Artagnan</option>
+<option value="daisy">Daisy</option>
+<option value="sq-shenmei">Dancer Shenmei</option>
+<option value="daphne">Daphne</option>
+<option value="pok-blk-artemis">Dark Artemis</option>
+<option value="cloe-dark">Dark Chloe</option>
+<option value="pok-blk-freikugel">Dark Freikugel</option>
+<option value="juuria-dark">Dark Julia</option>
+<option value="pok-blk-laevateinn">Dark Laevateinn</option>
+<option value="pok-blk-longinus">Dark Longinus</option>
+<option value="pok-blk-masamune">Dark Masamune</option>
+<option value="st-mela-dark">Dark Mira</option>
+<option value="st-nikusu-dark">Dark Nyx</option>
+<option value="cry-dark-olivier">Dark Olivier</option>
+<option value="othima-dark">Dark Othima</option>
+<option value="pok-blk-parashu">Dark Parashu</option>
+<option value="s-yomi">Dark Princess Yomi</option>
+<option value="gl-roxa-dark">Dark Roxanne</option>
+<option value="setsuna-dark">Dark Setsuna</option>
+<option value="pok-blk-tyrhung">Dark Tyrfing</option>
+<option value="zayin-dark">Dark Zain</option>
+<option value="decel">Decel</option>
+<option value="deneb">Deneb</option>
+<option value="ts-diane">Diane</option>
+<option value="dios">Dias</option>
+<option value="dilga">Dilga</option>
+<option value="don-taras">Don Taras</option>
+<option value="dorothea">Dorothea</option>
+<option value="sek-cloe">Dragoon Chloe</option>
+<option value="drei">Drei</option>
+<option value="edgar">Edgar</option>
+<option value="fa-edward">Edward</option>
+<option value="edwin">Edwin</option>
+<option value="einz">Eins</option>
+<option value="gl-eira">Eira</option>
+<option value="eizan">Eizan</option>
+<option value="elaine">Elaine</option>
+<option value="gl-eliza">Eliza</option>
+<option value="elizabeth">Elizabeth</option>
+<option value="ts-elizabth">Elizabeth Liones</option>
+<option value="erurike">Elrike</option>
+<option value="ema">Emma</option>
+<option value="emmel">Emmel</option>
+<option value="awake-emmel">Emmel (Final Battle)</option>
+<option value="gl-emrys">Emrys</option>
+<option value="ennis">Ennis</option>
+<option value="fa-envy">Envy</option>
+<option value="aot-eren">Eren</option>
+<option value="pok-eros">Eros</option>
+<option value="ts-escanor">Escanor</option>
+<option value="estela">Estella</option>
+<option value="dis-etona">Etna</option>
+<option value="eulalia">Eulalia</option>
+<option value="eve">Eve</option>
+<option value="everica">Evelika</option>
+<option value="yuen">Ewan</option>
+<option value="pok-failnaught">Failnaught</option>
+<option value="fairlily">Fairily</option>
+<option value="feirin">Fayrene</option>
+<option value="fencer">Fencer</option>
+<option value="sb-firo">Filo</option>
+<option value="fiona">Fiona</option>
+<option value="sb-fitoria">Fitoria</option>
+<option value="flamel">Flamel</option>
+<option value="folcas">Forcas</option>
+<option value="fraise">Fraise</option>
+<option value="freed">Freed</option>
+<option value="pok-freikugel">Freikugel</option>
+<option value="fujica">Fujika</option>
+<option value="fungliu">Fung Liu</option>
+<option value="hoo">Fuu</option>
+<option value="fury">Füry</option>
+<option value="gayn">Gane</option>
+<option value="gath">Gato</option>
+<option value="gerald">Gerald</option>
+<option value="guildford">Gilfred</option>
+<option value="gilgamesh">Gilgamesh</option>
+<option value="gino">Gino</option>
+<option value="ff15-gladiolus">Gladiolus</option>
+<option value="glanz">Glanz</option>
+<option value="sb-glass">Glass</option>
+<option value="gormalas">Gormalas</option>
+<option value="ts-gouseru">Gowther</option>
+<option value="gl-grimm1">Grimm I</option>
+<option value="sq-gunner">Gunner</option>
+<option value="gain">Gyan</option>
+<option value="aot-hanji">Hange</option>
+<option value="reaper">Harbinger</option>
+<option value="hayate">Hayate</option>
+<option value="hazel">Hazel</option>
+<option value="hazuki">Hazuki</option>
+<option value="helene">Helene</option>
+<option value="pok-hercule">Hercule</option>
+<option value="dung-hestia">Hestia</option>
+<option value="s-hiragi">Hiiragi</option>
+<option value="hisharmu">Hisham</option>
+<option value="hozuki">Hozuki</option>
+<option value="hugo">Hugo</option>
+<option value="ikona">Icona</option>
+<option value="ignacio">Ignacio</option>
+<option value="ff15-ignis">Ignis</option>
+<option value="ikasa">Ikasa</option>
+<option value="ira">Ila</option>
+<option value="iriya">Illyasviel</option>
+<option value="ines">Ines</option>
+<option value="irene">Irene</option>
+<option value="ishuna">Ishuna</option>
+<option value="itsuki">Itsuki</option>
+<option value="izayoi">Izayoi</option>
+<option value="jake">Jake</option>
+<option value="zin">Jin</option>
+<option value="yudit">Judith</option>
+<option value="juuria">Julia</option>
+<option value="justin">Justin</option>
+<option value="kaede">Kaede</option>
+<option value="kagura">Kagura</option>
+<option value="kalmia">Kalmia</option>
+<option value="kamui">Kamui</option>
+<option value="canon">Kanon</option>
+<option value="kasumi">Kasumi</option>
+<option value="kaya">Kaya</option>
+<option value="kazahaya">Kazahaya</option>
+<option value="kevin">Kevin</option>
+<option value="dis-killia">Killia</option>
+<option value="ts-king">King</option>
+<option value="fa-wrath">King Bradley</option>
+<option value="klima">Klima</option>
+<option value="kubera">Kubera</option>
+<option value="kudhanstein">Kudanstein</option>
+<option value="kuon">Kuon</option>
+<option value="kuza">Kuza</option>
+<option value="gl-lachesis">Lachesis</option>
+<option value="laevateinn">Laevateinn</option>
+<option value="dis-lahar">Laharl</option>
+<option value="raura">Laila</option>
+<option value="rakina">Lakina</option>
+<option value="runbell">Lambert</option>
+<option value="fate-lamia">Lamia</option>
+<option value="lamia">Lamia</option>
+<option value="langhao">Langhao</option>
+<option value="leafa">Leafah</option>
+<option value="rion">Leon</option>
+<option value="leonia">Leoniaz</option>
+<option value="leticia">Letitia</option>
+<option value="aot-levi">Levi</option>
+<option value="gl-liwang">Li Wang</option>
+<option value="l-urob">Lil&#39; Ouroboros</option>
+<option value="gl-lilith">Lilith</option>
+<option value="pok-risanaut">Lisanaut</option>
+<option value="liesbet">Lisbeth</option>
+<option value="rishen">Liu Shen</option>
+<option value="apr-liz">Lizardman</option>
+<option value="rofia">Lofia</option>
+<option value="logi">Logi</option>
+<option value="pok-logistilla">Logistilla</option>
+<option value="pok-longinus">Longinus</option>
+<option value="lotia">Lotiyah</option>
+<option value="lucille">Lucia</option>
+<option value="lucia">Lucian</option>
+<option value="lucido">Lucido</option>
+<option value="lucretia">Lucretia</option>
+<option value="bf-luna">Lunaris</option>
+<option value="lupinus">Lupinus</option>
+<option value="mashuli">Macherie</option>
+<option value="magnus">Magnus</option>
+<option value="malta">Malta</option>
+<option value="margaret">Margaret</option>
+<option value="cry-masakado">Masakado</option>
+<option value="masamune">Masamune</option>
+<option value="mathias">Matia</option>
+<option value="megistos">Megistos</option>
+<option value="meifan">Mei Fang</option>
+<option value="meily">Meily</option>
+<option value="merda">Melda</option>
+<option value="melia">Melia</option>
+<option value="ts-melyodas">Meliodas</option>
+<option value="sb-melty">Melty Melromarc</option>
+<option value="ts-merlin">Merlin</option>
+<option value="cry-merlinus">Merlinus</option>
+<option value="mesarthim">Mesarthim</option>
+<option value="mare">Mia</option>
+<option value="miannu">Mianne</option>
+<option value="michael">Michael</option>
+<option value="mielikki">Mielikki</option>
+<option value="aot-mikasa">Mikasa</option>
+<option value="mikoto">Mikoto</option>
+<option value="tsp-millim">Milim Nava</option>
+<option value="milis">Milis</option>
+<option value="minario">Minario</option>
+<option value="gl-minerva">Minerva</option>
+<option value="pok-minerva">Minerva</option>
+<option value="st-mela">Mira</option>
+<option value="mariannu">Mirianne</option>
+<option value="miuna">Miuna</option>
+<option value="mizuchi">Mizuchi</option>
+<option value="more">Moa</option>
+<option value="moca">Mocca</option>
+<option value="monzein">Monzein</option>
+<option value="gl-morrigan">Morrigan</option>
+<option value="naju">Na Zhu</option>
+<option value="sb-naofumi">Naofumi Iwatani</option>
+<option value="nasario">Nasario</option>
+<option value="natalie">Natalie</option>
+<option value="natsume">Natsume</option>
+<option value="neferty">Nefertiti</option>
+<option value="neica">Neica</option>
+<option value="nero">Nero</option>
+<option value="gl-nesha">Nesha</option>
+<option value="noin">Neun</option>
+<option value="neville">Neville</option>
+<option value="nicaea">Nicaea</option>
+<option value="nimuru">Nimul</option>
+<option value="nina">Nina</option>
+<option value="noah">Noah</option>
+<option value="ff15-noctis">Noctis</option>
+<option value="st-nikusu">Nyx</option>
+<option value="olga">Olga</option>
+<option value="orion">Orion</option>
+<option value="othima">Othima</option>
+<option value="uroboros-legacy">Ouroboros Legacy</option>
+<option value="pamera">Pamela</option>
+<option value="pok-parashu">Parashu</option>
+<option value="patti">Patty</option>
+<option value="peridot">Peridot</option>
+<option value="plumeria">Plumeria</option>
+<option value="pollin">Polin</option>
+<option value="fa-pride">Pride</option>
+<option value="dis-prinny">Prinny</option>
+<option value="priscila">Priscilla</option>
+<option value="ff15-promputo">Prompto</option>
+<option value="sq-paladin">Protector</option>
+<option value="qens">Quence</option>
+<option value="leychel">Rachel</option>
+<option value="pok-ragnarok">Ragnarok</option>
+<option value="rahu">Rahu</option>
+<option value="rameses">Ramses</option>
+<option value="sb-raphtalia">Raphtalia</option>
+<option value="lavina">Ravina</option>
+<option value="regen">Reagan</option>
+<option value="rebecca">Rebecca</option>
+<option value="dis-redmagnus">Red Magnus</option>
+<option value="gl-red6">Red VI</option>
+<option value="reida">Reida</option>
+<option value="leydow">Reido</option>
+<option value="reimei">Reimei</option>
+<option value="aot-reiner">Reiner</option>
+<option value="ren">Ren</option>
+<option value="retzius">Retzius</option>
+<option value="riche">Richie</option>
+<option value="rigaruto">Rigalt</option>
+<option value="tsp-rimuru">Rimuru Tempest</option>
+<option value="tsp-rimuru-slime">Rimuru Tempest</option>
+<option value="rinn">Rin</option>
+<option value="dis-rinn">Rin</option>
+<option value="tosaka-rinn">Rin Tohsaka</option>
+<option value="fa-hawkeye">Riza Hawkeye</option>
+<option value="rachel">Rochelle</option>
+<option value="rosa">Rosa</option>
+<option value="dis-rosa">Rosa</option>
+<option value="gl-roxa">Roxanne</option>
+<option value="fa-mustang">Roy Mustang</option>
+<option value="ryle">Ryle</option>
+<option value="ryui">Ryui</option>
+<option value="sabaleta">Sabareta</option>
+<option value="saber">Saber</option>
+<option value="s-sakura">Sakura</option>
+<option value="sheherazade">Scheherazade</option>
+<option value="schmeier">Schmeier</option>
+<option value="seida">Seida</option>
+<option value="selena">Selena</option>
+<option value="dis-seraphina">Seraphina</option>
+<option value="setsuna">Setsuna</option>
+<option value="shahar">Shahel</option>
+<option value="sherman">Shaman</option>
+<option value="syaron">Sharon</option>
+<option value="shayna">Shayna</option>
+<option value="shekinah">Shekinah</option>
+<option value="shenmei">Shenmei</option>
+<option value="gl-shion">Shion</option>
+<option value="zyva">Sieba</option>
+<option value="gl-sieg">Siegfried</option>
+<option value="shirma">Silma</option>
+<option value="thol">Sol</option>
+<option value="soleil">Soleil</option>
+<option value="pok-solomon">Solomon</option>
+<option value="sophia">Sophia</option>
+<option value="gl-soren">Soren</option>
+<option value="sq-princess">Sovereign</option>
+<option value="spica">Spica</option>
+<option value="sarauzu">Strauss</option>
+<option value="sutorie">Strie</option>
+<option value="siyi">Su Yi</option>
+<option value="suiran">Suiran</option>
+<option value="suruba">Sulva</option>
+<option value="suzuka">Suzuka</option>
+<option value="tamamo">Tamamo</option>
+<option value="tamisu">Tamis</option>
+<option value="tanosuke">Tanosuke</option>
+<option value="tehre">Tehre</option>
+<option value="teona">Teona</option>
+<option value="tetis">Tethys</option>
+<option value="teresa">Theresa</option>
+<option value="thillie">Thillie</option>
+<option value="pok-tifaret">Tiferet</option>
+<option value="tina">Tina</option>
+<option value="tomas">Tomas</option>
+<option value="toritoh">Toritoh</option>
+<option value="tsanglei">Tsang Lei</option>
+<option value="s-tsukuyomi">Tsukuyomi</option>
+<option value="tyrhung">Tyrfing</option>
+<option value="ugachi">Ugachi</option>
+<option value="dis-usalia">Usalia</option>
+<option value="uzuma">Uzuma</option>
+<option value="vanekis">Vanekis</option>
+<option value="vargas">Vargas</option>
+<option value="veloz">Veloz</option>
+<option value="vettel">Vettel</option>
+<option value="victor">Victor</option>
+<option value="vier">Vier</option>
+<option value="vincent">Vincent</option>
+<option value="vivi">Vivi</option>
+<option value="vlad">Vlad</option>
+<option value="voda">Voda</option>
+<option value="waginao">Waginau</option>
+<option value="wilhelm">Wilhelm</option>
+<option value="won">Won</option>
+<option value="yaulas">Yauras</option>
+<option value="esai-ignacio">Yishai Ignacio</option>
+<option value="ku-iena">Yna Ku</option>
+<option value="yomi">Yomi</option>
+<option value="fate-yomi">Yomi</option>
+<option value="yuan">Yuan</option>
+<option value="yunagi">Yunagi</option>
+<option value="yura">Yura</option>
+<option value="s-yuri">Yuri</option>
+<option value="yuto">Yuto</option>
+<option value="zafirith">Zafeiris</option>
+<option value="fate-zahar">Zahar</option>
+<option value="zahar">Zahar</option>
+<option value="zayin">Zain</option>
+<option value="zangetsu">Zangetsu</option>
+<option value="zex">Zechs</option>
+<option value="zenn">Zehn</option>
+<option value="zeke">Zeke</option>
+<option value="ts-zeldris">Zeldris</option>
+<option value="gl-zhengyi">Zheng Yi</option>
+<option value="zophie">Zofia</option>
+<option value="zwei">Zwei</option></select>
+              </div>
+              <div class="unit-select">
+                <span class="me-1">Level: </span>
+                <select id="levelSelect" class="form-select index-control form-select-sm" data-action="planner#levelSelect" disabled>
+                  <option value="60">60</option>
+                  <option value="61">61</option>
+                  <option value="62">62</option>
+                  <option value="63">63</option>
+                  <option value="64">64</option>
+                  <option value="65">65</option>
+                  <option value="66">66</option>
+                  <option value="67">67</option>
+                  <option value="68">68</option>
+                  <option value="69">69</option>
+                  <option value="70">70</option>
+                  <option value="71">71</option>
+                  <option value="72">72</option>
+                  <option value="73">73</option>
+                  <option value="74">74</option>
+                  <option value="75">75</option>
+                  <option value="76">76</option>
+                  <option value="77">77</option>
+                  <option value="78">78</option>
+                  <option value="79">79</option>
+                  <option value="80">80</option>
+                  <option value="81">81</option>
+                  <option value="82">82</option>
+                  <option value="83">83</option>
+                  <option value="84">84</option>
+                  <option value="85" selected="selected">85</option>
+                </select>
+              </div>
+            </div>
+            <div class="card-body">
+              <div id="unitInfo">
+                <div class="unit-icon">
+                  <div id="unitIcon" class="icon">
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="planner-header">Job</div>
+            <div id="unitJobs" class="card-body">
+
+            </div>
+            <div id="enlighten" class="d-none">
+              <div class="planner-header">Enlightenment</div>
+              <div id="enSkill" class="card-body">
+
+              </div>
+            </div>
+            <div id="spirit" class="d-none">
+              <div class="planner-header">Spirit Gear</div>
+              <div id="saSkill" class="card-body">
+                <div id="spiritGear" class="item-icon" data-enhancement="0">
+                  <div class="icon planner-icon">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="genealogy" class="d-none">
+              <div class="planner-header">Enlightened Bond</div>
+              <div id="bondSkill" class="card-body p-0">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div id="unitOptions" class="card main-panel d-none">
+            <div id="skills">
+              <div class="planner-header border-top-0">Passives</div>
+              <div id="jobSkills" class="card-body">
+
+              </div>
+            </div>
+            <div id="masterAbility" class="d-none">
+              <div class="planner-header">Master Ability</div>
+              <div id="maSkill" class="card-body">
+
+              </div>
+            </div>
+            <div id="gear">
+              <div class="planner-header">Gear</div>
+              <div class="card-body">
+                <div class="gear-icon">
+                  <div class="icon empty-icon planner-icon" data-bs-toggle="modal" data-bs-target="#gearModal" data-action="click->planner#gearList">
+
+                  </div>
+                </div>
+                <div class="gear-icon">
+                  <div class="icon empty-icon planner-icon" data-bs-toggle="modal" data-bs-target="#gearModal" data-action="click->planner#gearList">
+
+                  </div>
+                </div>
+                <div class="gear-icon">
+                  <div class="icon empty-icon planner-icon" data-bs-toggle="modal" data-bs-target="#gearModal" data-action="click->planner#gearList">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="cardEquipment">
+              <div class="planner-header">Mementos</div>
+              <div class="card-body">
+                <div class="card-icon">
+                  <div class="icon empty-icon planner-icon" data-bs-toggle="modal" data-bs-target="#cardModal" data-action="click->planner#cardList">
+
+                  </div>
+                </div>
+                <div class="card-icon sub-card-icon d-none">
+                  <div class="icon empty-icon planner-icon">
+                    <div class="locked-icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="runes">
+              <div class="planner-header">Truth Seals</div>
+              <div class="card-body">
+                <div class="rune-icon" data-slot="1">
+                  <div class="icon empty-icon planner-icon" data-bs-toggle="modal" data-bs-target="#runeModal" data-action="click->planner#runeList">
+                    <div class="slot slot-1"></div>
+                  </div>
+                </div>
+                <div class="rune-icon" data-slot="2">
+                  <div class="icon empty-icon planner-icon" data-bs-toggle="modal" data-bs-target="#runeModal" data-action="click->planner#runeList">
+                    <div class="slot slot-2"></div>
+                  </div>
+                </div>
+                <div class="rune-icon" data-slot="3">
+                  <div class="icon empty-icon planner-icon" data-bs-toggle="modal" data-bs-target="#runeModal" data-action="click->planner#runeList">
+                    <div class="slot slot-3"></div>
+                  </div>
+                </div>
+                <div class="rune-icon" data-slot="4">
+                  <div class="icon empty-icon planner-icon" data-bs-toggle="modal" data-bs-target="#runeModal" data-action="click->planner#runeList">
+                    <div class="slot slot-4"></div>
+                  </div>
+                </div>
+                <div class="rune-icon" data-slot="5">
+                  <div class="icon empty-icon planner-icon" data-bs-toggle="modal" data-bs-target="#runeModal" data-action="click->planner#runeList">
+                    <div class="slot slot-5"></div>
+                  </div>
+                </div>
+                <div class="rune-icon" data-slot="6">
+                  <div class="icon empty-icon planner-icon" data-bs-toggle="modal" data-bs-target="#runeModal" data-action="click->planner#runeList">
+                    <div class="slot slot-6"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="babel" class="d-none">
+              <div class="planner-header">Babel Expedition</div>
+              <div id="expSkill" class="card-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-lg-12 col-md-5 col-sm-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+          <div id="unitCP" class="d-none">
+            <table class="table table-sm stats-table">
+              <caption>Combat Power</caption>
+              <tbody>
+                <tr>
+                  <td id="cp" class="text-nowrap">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="unitStats" class="d-none">
+            <table class="table table-sm stats-table">
+              <caption>Primary Stats</caption>
+              <tbody>
+                <tr>
+                  <th>HP</th>
+                  <td id="hp" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>PATK</th>
+                  <td id="atk" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>PDEF</th>
+                  <td id="def" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>MATK</th>
+                  <td id="mag" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>MDEF</th>
+                  <td id="mnd" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>DEX</th>
+                  <td id="dex" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>AGI</th>
+                  <td id="spd" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>CRIT</th>
+                  <td id="cri" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>LUCK</th>
+                  <td id="luk" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>Jewels</th>
+                  <td id="mp" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>Initial Jewels</th>
+                  <td id="imp" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>Healing</th>
+                  <td id="healing" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>Move</th>
+                  <td id="move" class="text-nowrap">0</td>
+                </tr>
+                <tr>
+                  <th>Jump</th>
+                  <td id="jmp" class="text-nowrap">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="unitOtherStats" class="d-none">
+            <table class="table table-sm stats-table">
+              <caption>Other Stats</caption>
+              <tbody id="otherStats">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+          <div id="unitRes" class="d-none">
+            <table class="table table-sm stats-table">
+              <caption>Resistances</caption>
+              <tbody id="resistances">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="gearModal" tabindex="-1" role="dialog" aria-labelledby="gearModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content sort-modal">
+        <div class="modal-header filter-header">
+          <h5 class="modal-title" id="gearModalLabel">Gear</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="gearsList">
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="cardModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content sort-modal">
+        <div class="modal-header filter-header">
+          <h5 class="modal-title" id="cardModalLabel">Mementos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="cardsList">
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="runeModal" tabindex="-1" role="dialog" aria-labelledby="runeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content sort-modal">
+        <div class="modal-header filter-header">
+          <h5 class="modal-title" id="runeModalLabel">Truth Seals</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="runesList">
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="runeStatsModal" tabindex="-1" role="dialog" aria-labelledby="runeStatsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content sort-modal">
+        <div class="modal-header filter-header">
+          <h5 class="modal-title" id="runeStatsModalLabel">Truth Seal Stats</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body filter-body">
+          <div id="runeStats">
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var statTypes = ["","HP","HP","Max Jewels","Initial Jewels","PATK","PDEF","MATK","MDEF","Healing","DEX","AGI","CRIT","LUCK","MOVE","JUMP","Range","Scope","Height Range","Fire","Water","Wind","Thunder","Light","Dark","Poison","Paralyze","Stun","Sleep","Charm","Petrify","Blind","Silence","Bind","Daze","Infect","Death Sentence","Berserk","Knockback","Buff","Debuff","Stop","Quicken","Delay","Auto Heal","Slow","Rage","Deep Sleep","All Statuses","Fire Res","Water Res","Wind Res","Thunder Res","Light Res","Dark Res","Poison Res","Paralyze Res","Stun Res","Sleep Res","Charm Res","Petrify Res","Blind Res","Silence Res","Bind Res","Daze Res","Infect Res","Death Sentence Res","Berserk Res","Knockback Res","Buff Res","Debuff Res","Stop Res","Quicken Res","Delay Res","Auto Heal Res","Slow Res","Rage Res","Deep Sleep Res","All Status Res","Hit Rate","Evasion Rate","CRIT Rate","Jewels Obtained","Jewels Spent Rate","Action Count Operation","Slash ATK Power","Pierce ATK Power","Strike ATK Power","Missile ATK Power","MATK Power","Counter ATK Power","JUMP ATK Power","Guts","Auto Jewel Charge","Charge Time","Cast Time","Buff Duration","Debuff Duration","COMBO Area","HP Cost Rate","Skill Use Count","Poison Dmg Rate","Poison Duration","Jewel Auto Charge","Jewel Auto Charge Res","Disable Heal","Disable Heal Res","Slash Res","Pierce Res","Strike Res","Missile Res","Magic Res","Counter Res","JUMP Res","Slash Evasion Rate","Pierce Evasion Rate","Strike Evasion Rate","Missile Evasion Rate","Magic Evasion Rate","Counter Evasion Rate","JUMP Evasion Rate","Jewels Obtained Rate","Jewels Spent","Single Target ATK","Area ATK","Single Target ATK Res","Area ATK Res","CT-Down","CT-Up","CT-Down Res","CT-Up Res","Strong vs Fire","Strong vs Water","Strong vs Wind","Strong vs Thunder","Strong vs Light","Strong vs Dark","Strong vs Fire Res","Strong vs Water Res","Strong vs Wind Res","Strong vs Thunder Res","Strong vs Light Res","Strong vs Dark Res", "Fire Unit DEF", "Water Unit DEF", "Wind Unit DEF", "Thunder Unit DEF", "Light Unit DEF", "Dark Unit DEF", "Max HP Dmg Rate", "Max Jewel Dmg Rate", "Max HP Dmg Rate Res", "Max Jewel Dmg Rate Res", "Tokkou", "Side ATK", "Back ATK", "Side ATK Res", "Back ATK Res", "Reaction Block", "Reaction Block Res", "Critical Damage Rate", "Non-type ATK Power", "Non-type Res", "Non-type Evasion Rate", "Enhance Max HP Buff", "Enhance PATK Buff", "Enhance PDEF Buff", "Enhance MATK Buff", "Enhance MDEF Buff", "Enhance Healing Buff", "Enhance DEX Buff", "Enhance AGI Buff", "Enhance CRIT Buff", "Enhance LUCK Buff", "Enhance MOVE Buff", "Enhance JUMP Buff", "Reduce Max HP Debuff", "Reduce PATK Debuff", "Reduce PDEF Debuff", "Reduce MATK Debuff", "Reduce MDEF Debuff", "Reduce Healing Debuff", "Reduce DEX Debuff", "Reduce AGI Debuff", "Reduce CRIT Debuff", "Reduce LUCK Debuff", "Reduce MOVE Debuff", "Reduce JUMP Debuff", "Forced Targeting", "Forced Targeting Res", "Tokubou", "Disable Support", "Disable Support Res", "Alchemic Overload", "Alchemic Overload Res", "Alchemic Crush", "Alchemic Crush Res", "Alchemic Freeze", "Alchemic Freeze Res", "Alchemic Down", "Alchemic Down Res"];
+    var tkTags = ["人族", "モンスター", "魔人", "機械", "FOE", "亜人種", "壊せるオブジェクト", "男性", "女性", "メタル", "不死者", "異族", "魔獣", "植物", "昆虫", "不定形", "浮遊", "水棲", "十戒衆", "巨体", "雪", "正月", "神獣", "<憤怒>", "<嫉妬>", "<色欲>", "<暴食>", "<傲慢>", "<強欲>", "<怠惰>", "ダーク", "魔動人形", "下位魔神", "魔神", "バジュラ", "オーク", "鬼", "竜族", "悪魔", "天人", "呪霊", "石像"];
+    var tokkouTypes = ["Human", "Monster", "Demon", "Machine", "FOE", "Demi", "Breakable", "Male", "Female", "Metal", "Undead", "Eldritch", "Beast", "Plant", "Insect", "Amorphous", "Airborne", "Aquatic", "Templar", "Gigantic", "Snow", "New Year", "Holy Beast", "Wrath", "Envy", "Lust", "Gluttony", "Pride", "Greed", "Sloth", "Dark", "Demon Golem", "Sub-Demon", "Demon (TS)", "Vajra", "Orc", "Ogre", "Dragon", "Demon (SMT3)", "Amanto", "Cursed Spirit", "Statue"];
+    var areaTypes = ["Envylia", "Slothstein", "Lustburg", "Gluttony Foss", "Wratharis", "Greed Dike", "Northern Pride", "Desert Zone", "Saga Region", "Wadatsumi", "Lost Blue"];
+  </script>
+</div>
+    <footer>
+  <p class="copyright"><a data-turbo-prefetch="false" href="privacy-policy.html">Privacy Policy</a></p>
+  <p class="copyright">&copy; 2017 - 2025 AlchemistCodeDB.com<br>
+  All game content and assets are trademarks and copyrights of Fuji&amp;gumi Games or gumi Inc. This site is not affiliated with Fuji&amp;gumi Games or gumi Inc.</p>
+</footer>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- Mirrored from www.alchemistcodedb.com/planner?build=eyJ1IjoiaWtvbmEiLCJsIjo4NSwiaiI6IjAifQ== by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2025 17:53:36 GMT -->
+</html>

@@ -1,0 +1,31 @@
+So the site isn't completely fixed.
+The things that are not working properly or at all that I have noticed are:
+the unit planner;
+dark mode;
+and some icons don't work properly (like the icons that define skill type, attack, support, and counter, etc.).
+But the menus have been fixed, and the characters have element and origin icons. 
+I don't know if I'll do anything else, but I think it's usable as a memento of the game.
+The search and filter functions are also broken, but I don't know where to start. But everything is accessible from the various menus.
+
+Another thing I noticed: some mementos aren't available in both languages, always at least in one, but sometimes not twice(in the one I have checked obv I can't check all). All the info is there, but I don't have the skills to translate from one language to the other.
+
+The zip also contains the tools I used:
+bootfixer, which fixes bootstrap in the ACDB folder(it had one string to all the html page lol);
+
+resize, which changes the size of the icons if you want to change them or something else;
+
+The two converti_span tools, which are used to find and replace parts in the units and jap units to make the element and origin icons appear, can be used on other folders, but I don't remember if these symbols were required on other pages. If so, these two simple tools can easily fix it.
+
+The path is always the placeholder, but just change it to the exact location of the folder on the device. If you have any questions, ask chatgpt, who is very good at these things. He helped me with file analysis and tool creation.
+
+He should easily understand comments in Italian, lol.
+
+There are also the files with the missing icons, both in the original format and in the resize I used. The site uses the two folders, elements and origins, in ACDBfixed.
+
+If you have the files with the other missing icons, contact me and maybe I can fix them, but I can't guarantee it. This job was done in a day but I don't know when I'll be able to dedicate myself to it again, but contacting me can't hurt (at most I won't answer lol)
+
+Work done by .thefc on Discord
+
+Obviously all the credit goes to the original creators and admins (or whoever managed the site anyway) of the database I only did light fixes the real hard work for years was theirs
+
+If there are any mistakes in this text, blame Google Translate, I checked it but I'm sure I missed something lol
