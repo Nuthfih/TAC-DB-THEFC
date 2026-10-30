@@ -151,7 +151,7 @@
             <tbody>
                 <tr>
                   <th colspan="2"><a data-turbo-prefetch="false" href="../plannerac47.html?build=eyJ1IjoidGhvbCIsImwiOjg1LCJqIjoiMyJ9">Unit Planner</a></th>
-                </tr><tr id="tac-batch-models"><td colspan="2" style="text-align:center;background:#24201b;color:#f5ead4">3D models: <a data-turbo="false" style="color:#e8c76a;padding:6px;display:inline-block" href="../../tac-viewer.html?unit=thol&amp;outfit=default" target="tac-3d" rel="noopener">Default</a> · <a data-turbo="false" style="color:#e8c76a;padding:6px;display:inline-block" href="../../tac-viewer.html?unit=thol&amp;outfit=anniversary" target="tac-3d" rel="noopener">Anniversary (preview)</a> · <a data-turbo="false" style="color:#e8c76a;padding:6px;display:inline-block" href="../../tac-viewer.html?unit=thol&amp;outfit=tmemo" target="tac-3d" rel="noopener">tmemo variant (preview)</a> · <a data-turbo="false" style="color:#e8c76a;padding:6px;display:inline-block" href="../../tac-viewer.html?unit=thol&amp;outfit=yukata" target="tac-3d" rel="noopener">Yukata (preview)</a></td></tr>
+                </tr><tr id="tac-batch-models"><td colspan="2" style="text-align:center;background:#24201b;color:#f5ead4">3D models: <a data-turbo="false" style="color:#e8c76a;padding:6px;display:inline-block" href="../../tac-viewer.html?unit=thol&amp;outfit=default" onclick="event.preventDefault();document.getElementById('tac-batch-frame').src=this.href;document.getElementById('tac-batch-dialog').showModal();">Default</a> · <a data-turbo="false" style="color:#e8c76a;padding:6px;display:inline-block" href="../../tac-viewer.html?unit=thol&amp;outfit=anniversary" onclick="event.preventDefault();document.getElementById('tac-batch-frame').src=this.href;document.getElementById('tac-batch-dialog').showModal();">Anniversary (preview)</a> · <a data-turbo="false" style="color:#e8c76a;padding:6px;display:inline-block" href="../../tac-viewer.html?unit=thol&amp;outfit=tmemo" onclick="event.preventDefault();document.getElementById('tac-batch-frame').src=this.href;document.getElementById('tac-batch-dialog').showModal();">tmemo variant (preview)</a> · <a data-turbo="false" style="color:#e8c76a;padding:6px;display:inline-block" href="../../tac-viewer.html?unit=thol&amp;outfit=yukata" onclick="event.preventDefault();document.getElementById('tac-batch-frame').src=this.href;document.getElementById('tac-batch-dialog').showModal();">Yukata (preview)</a></td></tr>
               <tr>
                 <th>Element</th>
                 <td>
@@ -43847,6 +43847,29 @@
 </footer>
   </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<dialog id="tac-batch-dialog"
+ style="padding:0;width:1100px;max-width:94vw;border:1px solid #e8c76a;
+ border-radius:8px;background:#24201b;color:#e8c76a"
+ onclose="document.getElementById('tac-batch-frame').src='about:blank'">
+ <div style="display:flex;justify-content:space-between;align-items:center;
+ padding:10px 16px">
+  <strong>3D models</strong>
+  <button type="button"
+   style="background:#24201b;color:#e8c76a;border:1px solid #e8c76a;
+   padding:6px 12px;cursor:pointer"
+   onclick="document.getElementById('tac-batch-dialog').close()">
+   Close
+  </button>
+ </div>
+ <iframe id="tac-batch-frame" title="Interactive 3D model"
+  src="about:blank"
+  style="display:block;width:100%;height:75vh;border:0"></iframe>
+</dialog>
+<style>
+#tac-batch-dialog::backdrop { background:rgba(0,0,0,.75); }
+</style>
+
 </body>
 
 <!-- Mirrored from www.alchemistcodedb.com/unit/thol by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2025 15:16:53 GMT -->
