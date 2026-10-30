@@ -151,7 +151,7 @@
             <tbody>
                 <tr>
                   <th colspan="2"><a data-turbo-prefetch="false" href="../plannerf8ba.html?build=eyJ1IjoiZW1tZWwiLCJsIjo4NSwiaiI6IjAifQ==">Unit Planner</a></th>
-                </tr>
+                </tr><tr id="tac-outfit-links"><td colspan="2" style="text-align:center;background:#24201b;color:#f5ead4">3D models: <button type="button" style="background:none;border:0;color:#e8c76a;padding:6px;cursor:pointer;text-decoration:underline;font:inherit" onclick="document.getElementById('tac-model-frame').src='../../emmel-viewer.html?outfit=default';document.getElementById('tac-model-dialog').showModal()">Default</button> · <button type="button" style="background:none;border:0;color:#e8c76a;padding:6px;cursor:pointer;text-decoration:underline;font:inherit" onclick="document.getElementById('tac-model-frame').src='../../emmel-viewer.html?outfit=anniversary';document.getElementById('tac-model-dialog').showModal()">Anniversary</button></td></tr>
               <tr>
                 <th>Element</th>
                 <td>
@@ -35894,6 +35894,22 @@
 </footer>
   </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- TAC local 3D preview -->
+<style>
+#tac-model-dialog {width:1100px;max-width:94vw;height:90vh;max-height:94vh;padding:0;border:1px solid #526078;border-radius:12px;background:#24211e;color:#fff;}
+#tac-model-dialog::backdrop {background:rgba(0,0,0,.8);}
+#tac-model-dialog header {display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;}
+#tac-model-dialog p {margin:0;padding:0 18px 12px;color:#c8d2e1;}
+#tac-model-frame {display:block;width:100%;height:calc(100% - 116px);border:0;background:#24211e;}
+#tac-model-dialog button {background:#34445f;color:white;border:1px solid #71839c;border-radius:6px;padding:8px 16px;cursor:pointer;}
+</style>
+<dialog id="tac-model-dialog" aria-labelledby="tac-model-title" onclose="document.getElementById('tac-model-frame').src='about:blank'">
+<header><strong id="tac-model-title">Emmel · 3D preview</strong><form method="dialog"><button autofocus>Close</button></form></header>
+<p>Choose Default or Anniversary inside the viewer. <a href="../../emmel-viewer.html?outfit=default" target="_blank" rel="noopener" style="color:#9bd6ff">Open full viewer</a></p>
+<iframe id="tac-model-frame" title="Interactive Emmel anniversary model" src="about:blank" allow="fullscreen"></iframe>
+</dialog>
+
 </body>
 
 <!-- Mirrored from www.alchemistcodedb.com/unit/emmel by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2025 15:28:51 GMT -->
