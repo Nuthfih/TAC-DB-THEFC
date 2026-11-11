@@ -4,12 +4,16 @@ import { Modal } from "bootstrap"
 export default class extends Controller {
   static targets = ["form"]
 
-  search() {
+  connect() {
+    if (this.hasFormTarget) {
+      this.formTarget.setAttribute("action", "javascript:void(0);");
+      this.formTarget.addEventListener("submit", (e) => e.preventDefault());
+    }
+  }
+
+  search(e) {
+    if (e) e.preventDefault();
     clearTimeout(this.timeout);
-    this.timeout = setTimeout(() => {
-      this.disabled();
-      this.formTarget.requestSubmit();
-    }, 250);
   }
 
   updateInput() {

@@ -1,0 +1,10 @@
+# Antigravity ACDB Hosting Config
+AddType application/javascript .js .mjs +esm
+
+<Files "+esm">
+    ForceType application/javascript
+</Files>
+
+RewriteEngine On
+RewriteRule ^(.*)\+esm$ $1+esm.js [L]
+
